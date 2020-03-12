@@ -19,12 +19,12 @@ namespace BlazorMultiTenentApp
                 "a",
                 cb => cb
                     .RegisterType<WeatherForecastService>()
-                    .SingleInstance());
+                    .InstancePerLifetimeScope());
             multitenantContainer.ConfigureTenant(
                 "b",
                 cb => cb
                     .RegisterType<WeatherForecastService>()
-                    .SingleInstance());
+                    .InstancePerLifetimeScope());
 
             return multitenantContainer;
         }

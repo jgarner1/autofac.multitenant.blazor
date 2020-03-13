@@ -1,6 +1,6 @@
 using System;
 
-namespace BlazorMultiTenentApp.Data
+namespace BlazorMultiTenantApp.Data
 {
     public class WeatherForecast
     {

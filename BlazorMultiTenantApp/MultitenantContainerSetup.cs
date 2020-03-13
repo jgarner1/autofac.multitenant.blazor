@@ -1,10 +1,10 @@
 ﻿using Autofac;
 using Autofac.Multitenant;
-using BlazorMultiTenentApp.Data;
+using BlazorMultiTenantApp.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace BlazorMultiTenentApp
+namespace BlazorMultiTenantApp
 {
     public static class MultitenantContainerSetup
     {

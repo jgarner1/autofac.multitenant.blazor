@@ -1,4 +1,5 @@
 using Autofac;
+using BlazorMultiTenantApp.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -27,7 +28,7 @@ namespace BlazorMultiTenantApp
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            //builder.RegisterType<WeatherForecastService>().InstancePerLifetimeScope();
+            builder.RegisterType<WeatherForecastService>().InstancePerLifetimeScope();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
